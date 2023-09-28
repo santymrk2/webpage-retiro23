@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import Menu from '../components/Menu.jsx'
 import logoMenu from '../assets/menu.svg'
 import logoExit from '../assets/equis.svg'
 
 
 const Navbar = () => {
-  const [menu, setMenu] = useState(true)
+  const [menu, setMenu] = useState(false)
 
   const handleClick = () => {
     const toogle = menu
@@ -13,24 +14,25 @@ const Navbar = () => {
   }
 
   return(
-    <nav className="flex flex-row h-16 w-10/12 m-14 justify-around items-center text-xl font-bold rounded-lg sticky top-5 bg-gray-50">
+    <nav className="flex flex-row self-center w-8/12 h-16 m-10 justify-around items-center text-xl font-bold rounded-lg top-5 bg-gray-50">
       <Link to='/'>
         <h1 className="text-2xl text">RETIRO23</h1>
       </Link>
       <ul className="flex flex-row gap-6 list-none font-medium no-underline">
         <li >
-          <Link className="hover:bg-slate-300 rounded-lg p-2" to="/">Inicio</Link>
+          <Link className="md:block md:hover:bg-slate-300 md:rounded-lg md:p-2 hidden" to="/">Inicio</Link>
         </li>
         <li >
-          <Link className="hover:bg-slate-300 rounded-lg p-2" to="/rules">Reglas</Link>
+          <Link className="md:block md:hover:bg-slate-300 md:rounded-lg md:p-2 hidden" to="/rules">Reglas</Link>
         </li>
         <li>
-          <Link className="hover:bg-slate-300 rounded-lg p-2" to="/calendar">Calendario</Link>
+          <Link className="md:block md:hover:bg-slate-300 md:rounded-lg md:p-2 hidden" to="/calendar">Calendario</Link>
         </li>
       </ul>
-      <div className="hidden">
-        <img className={menu ? 'block' : 'hidden'} onClick={handleClick} src={logoMenu}></img>
-        <img className={menu ? 'hidden' : 'block'} onClick={handleClick} src={logoExit}></img>
+      <div className="block md:hidden">
+        <img className={menu ? 'hidden' : 'h-8'} onClick={handleClick} src={logoMenu}></img>
+        <img className={menu ? 'h-5' : 'hidden'} onClick={handleClick} src={logoExit}></img>
+        {menu ? <Menu /> : ''}
       </div>
     </nav>
   )

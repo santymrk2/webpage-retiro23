@@ -7,11 +7,11 @@ import '../index.css'
 
 const Layout = () => {
   return (
-    <section className="flex flex-column flex-wrap justify-center	 bg-hero-pattern bg-cover bg-top h-full">
-      <div className="contents font-sans">
-        <Navbar className="flex-initial"/>
-        <Outlet className="flex-auto"/>
-        <Footer className="flex-[0_1_40%]"/>
+    <section className="min-w-min flex flex-col flex-nowrap content-center top-0 m-0 p-5 bg-hero-pattern bg-cover bg-top w-full h-full">
+      <div className="contents absolute">
+        <Navbar />
+        <Outlet />
+        <Footer />
       </div>
     </section>
   )

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import imgMaps from '../assets/maps.svg'
 
 const CURRENT_DATE_BETWEEN = `https://worldtimeapi.org/api/timezone/America/Argentina/Buenos_Aires`
 
@@ -34,18 +35,19 @@ function Home() {
   }, [])
 
   return(
-    <main className='flex flex-col justify-center gap-5 text-white'>
-      <div className='m-20 p-20 '>
-        <h2 className='m-0 font-bold text-center text-5xl'>FALTAN</h2>
-        <h2 className='m-0 font-black leading-none text-center text-6xl'>{days}</h2>
-        <h2 className='m-0 font-bold text-center text-5xl'>DÍAS</h2>
+    <main className='flex flex-col flex-auto justify-center gap-5  text-white'>
+      <div className='m-20 p-20 text-center rounded-lg drop-shadow-2xl'>
+        <h2 className='m-0 font-bold text-5xl'>FALTAN</h2>
+        <h2 className='m-0 font-black leading-none text-6xl'>{days}</h2>
+        <h2 className='m-0 font-bold text-5xl'>DÍAS</h2>
       </div>
-      <div className='grid justify-items-center gap-5 relative bg-opacity-70 m-10 p-5  bg-black rounded-lg'>
+      <div className='grid justify-items-center gap-5 relative bg-opacity-70 m-10 p-5 bg-black rounded-lg'>
         <h1 className='font-black text-5xl'>Ubicacion: </h1>
         <p className='text-xl'>Av. Don Bosco 2627, B7000</p>
         <p className='text-xl'>Tandil, Provincia de Buenos Aires</p>
-        <Link className='bg-black m-5 p-2 text-center text-2xl w-40 rounded-lg ' to="https://maps.app.goo.gl/dto2kL9TvgbcudtR7">
-          GoogleMaps
+        <Link className='bg-white hover:bg-gray-400 m-5 p-2 flex flex-row gap-2 text-center text-2xl  rounded-lg ' to="https://maps.app.goo.gl/dto2kL9TvgbcudtR7">
+          <img className="w-6" src={imgMaps}></img>
+          <p className='text-black font-bold text-xl '>GoogleMaps</p>
         </Link>
       </div>
     </main>

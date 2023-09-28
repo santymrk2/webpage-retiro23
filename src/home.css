@@ -1,0 +1,34 @@
+body{
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin: 5rem;
+  color: white;
+}
+
+.container-title{
+  font-size: 2em;
+  margin: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container-big-title{
+  font-size: 15em;
+  margin: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container-text{
+  font-size: 1em;
+  margin: 5px;
+  font-weight: normal;
+  text-align: center;
+
+}

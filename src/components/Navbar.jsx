@@ -14,7 +14,7 @@ const Navbar = () => {
   }
 
   return(
-    <nav className="flex flex-row self-center w-8/12 h-16 m-10 justify-around items-center text-xl font-bold rounded-lg top-5 bg-gray-50">
+    <nav className="flex flex-row self-center w-11/12 h-16 m-10 justify-around items-center text-xl font-bold rounded-lg top-5 bg-gray-50">
       <Link to='/'>
         <h1 className="text-2xl text">RETIRO23</h1>
       </Link>

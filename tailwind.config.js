@@ -20,7 +20,8 @@ export default {
     },
     extend: {},
     fontFamily: {
-      'sans': ['Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS']
+      'common': ['upheavtt'],
+      'display': ['"Pixelify Sans"']
     }
   },
   plugins: [],

@@ -14,6 +14,9 @@ const Menu = ( makeClick ) => {
           <li>
             <Link className="block hover:bg-slate-300 rounded-lg p-2" onClick={makeClick} to="/calendar">Calendario</Link>
           </li>
+          <li>
+            <Link className=" hover:bg-slate-300 rounded-lg p-2 hidden" onClick={makeClick} to="https://drive.google.com/drive/folders/1dTHK0tTr26BM4F9REs_Fj7de9xhR-UJK?usp=sharing">Calendario</Link>
+          </li>
         </ul>
       </div>
     </>

@@ -7,7 +7,7 @@ import '../index.css'
 
 const Layout = () => {
   return (
-    <section className="flex flex-col flex-nowrap content-center top-0 m-0 p-5 bg-hero-pattern bg-cover bg-top w-full h-full">
+    <section className="flex flex-col flex-nowrap content-center top-0 m-0 p-5 bg-hero-pattern backdrop-opacity-90 bg-cover bg-top w-full h-full">
       <div className="contents font-common tracking-wider">
         <Navbar />
         <Outlet />

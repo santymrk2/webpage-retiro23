@@ -1,17 +1,17 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Menu from '../components/Menu.jsx'
 import logoMenu from '../assets/menu.svg'
-import logoExit from '../assets/equis.svg'
+import logoExit from '../assets/cross.svg'
 
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false)
 
   const handleClick = () => {
-    const toogle = menu
-    setMenu(!toogle)
+    setMenu(!menu)
   }
+  useEffect(() => {setMenu(false)},[])
 
   return(
     <nav className="flex flex-row self-center w-11/12 h-16 m-10 justify-around items-center text-xl font-bold rounded-lg top-5 bg-gray-50">
@@ -30,9 +30,9 @@ const Navbar = () => {
         </li>
       </ul>
       <div className="block md:hidden">
-        <img className={menu ? 'hidden' : 'h-8'} onClick={handleClick} src={logoMenu}></img>
-        <img className={menu ? 'h-5' : 'hidden'} onClick={handleClick} src={logoExit}></img>
-        {menu ? <Menu /> : ''}
+        <img className={menu ? 'hidden' : 'block h-10'} onClick={handleClick} src={logoMenu}></img>
+        <img className={menu ? 'block h-10' : 'hidden'} onClick={handleClick} src={logoExit}></img>
+        {menu && <Menu makeClick={handleClick} />}
       </div>
     </nav>
   )

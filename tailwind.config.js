@@ -16,7 +16,10 @@ export default {
       '3xl': '1.953rem',
       '4xl': '2.441rem',
       '5xl': '3.052rem',
-      '6xl': '15rem'
+      '6xl': '5rem',
+      '7xl': '8rem',
+      '8xl': '12rem',
+      '9xl': '15rem'
     },
     extend: {},
     fontFamily: {

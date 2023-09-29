@@ -4,7 +4,7 @@ import logoIns from '../assets/instagram.svg'
 
 const Footer = () => {
   return(
-    <footer className="flex flex-auto flex-row justify-evenly md:justify-around items-center self-center h-16 w-11/12 md:w-8/12 gap-8 text-black rounded-lg bg-gray-50">
+    <footer className="flex mt-auto flex-row justify-evenly md:justify-around items-center self-center h-16 w-11/12 md:w-8/12 gap-8 text-black rounded-lg bg-gray-50">
       <p className="text-lg md:text-xl">Nuestras redes:</p>
       <div className="">
         <Link to="https://t.me/areopago23">

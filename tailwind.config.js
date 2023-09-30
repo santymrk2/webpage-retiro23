@@ -6,7 +6,7 @@ export default {
   ],
   theme: {
     'backgroundImage': {
-      'hero-pattern': "url('https://images.pexels.com/photos/1955134/pexels-photo-1955134.jpeg')",
+      'hero-pattern': "url('/src/assets/background_5.jpg')",
     },
     fontSize: {
       'sm': '0.8rem',

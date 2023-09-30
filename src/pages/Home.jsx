@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import imgMaps from '../assets/maps.svg'
+import imgDrive from '../assets/drive.svg'
 
 const CURRENT_DATE_BETWEEN = `https://worldtimeapi.org/api/timezone/America/Argentina/Buenos_Aires`
 
 function Home() {
-  const [days, setDays] = useState(false)
+  const [days, setDays] = useState(null)
 
   useEffect(() => {
     fetch(CURRENT_DATE_BETWEEN)
@@ -66,9 +67,18 @@ function Home() {
         <h1 className='font-black text-3xl md:text-5xl'>Ubicación: </h1>
         <p className='text-base md:text-xl my-5'>Av. Don Bosco 2627, B7000</p>
         <p className='text-base md:text-xl -my-10'>Tandil, Provincia de Buenos Aires</p>
-        <Link className='bg-white hover:bg-gray-300 my-5 m-2 p-2 flex flex-row gap-2 text-center text-2xl  rounded-lg ' to="https://maps.app.goo.gl/dto2kL9TvgbcudtR7">
+        <Link className='bg-white hover:bg-gray-400 my-5 m-2 p-2 flex flex-row gap-2 text-center text-2xl  rounded-lg ' to="https://maps.app.goo.gl/dto2kL9TvgbcudtR7">
           <img className="w-6 m-1" src={imgMaps}></img>
-          <p className='text-black font-bold text-xl m-1'>GoogleMaps</p>
+          <p className='text-black  font-bold text-xl m-1'>GoogleMaps</p>
+        </Link>
+      </div>
+      <div className='grid justify-items-center gap-5 relative m-10 p-5 bg-black bg-opacity-25 backdrop-blur-xl	rounded-lg'>
+        <h1 className='font-black text-3xl md:text-5xl'>Recuerdos: </h1>
+        <p className='text-base md:text-xl my-5'>Entra al link para ver las fotos del retiro</p>
+        <p className='text-base md:text-xl -my-10'>Tambien podes compartir tus fotos en la carpeta SubiTusFotos</p>
+        <Link className='bg-white hover:bg-gray-400 my-5 m-2 p-2 flex flex-row gap-2 text-center text-2xl  rounded-lg ' to="https://drive.google.com/drive/folders/1dTHK0tTr26BM4F9REs_Fj7de9xhR-UJK?usp=drive_link">
+          <img className="w-6 m-1" src={imgDrive}></img>
+          <p className='text-black font-bold text-xl m-1'>GoogleDrive</p>
         </Link>
       </div>
     </main>

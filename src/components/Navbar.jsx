@@ -19,17 +19,20 @@ const Navbar = () => {
       </Link>
       <ul className="flex flex-row gap-6 list-none font-medium no-underline">
         <li >
-          <Link className="md:block md:hover:bg-slate-300 md:rounded-lg md:p-2 hidden" to="/">Inicio</Link>
-        </li>
-        <li >
-          <Link className="md:block md:hover:bg-slate-300 md:rounded-lg md:p-2 hidden" to="/rules">Reglas</Link>
+          <Link className="lg:block md:hover:bg-slate-300 md:rounded-lg md:p-2 hidden" to="/rules">Reglas</Link>
         </li>
         <li>
-          <Link className="md:block md:hover:bg-slate-300 md:rounded-lg md:p-2 hidden" to="/calendar">Calendario</Link>
+          <Link className="lg:block md:hover:bg-slate-300 md:rounded-lg md:p-2 hidden" to="/calendar">Calendario</Link>
+        </li>
+        <li>
+          <Link className="lg:block md:hover:bg-slate-300 md:rounded-lg md:p-2 hidden" to="/songs">Canciones</Link>
+        </li>
+        <li>
+          <Link className="lg:block md:hover:bg-slate-300 md:rounded-lg md:p-2 hidden" to="/messages">Devocionales</Link>
         </li>
       </ul>
-      <div className="block md:hidden m-2">
-        <img className={menu ? 'hidden' : 'block h-10 '} onClick={handleClick} src={logoMenu}></img>
+      <div className="block lg:hidden m-2">
+        <img className={menu ? 'hidden' : 'block h-10'} onClick={handleClick} src={logoMenu}></img>
         <img className={menu ? 'block h-10' : 'hidden'} onClick={handleClick} src={logoExit}></img>
         {menu && <Menu className="transition duration-300 ease-in-out" makeClick={handleClick}/>}
       </div>

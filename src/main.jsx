@@ -6,6 +6,8 @@ import Layout from './pages/Layout.jsx'
 import Rules from './pages/Rules.jsx'
 import Calendar from './pages/Calendar.jsx'
 import NotFound from './pages/NotFound.jsx'
+import Songs from './pages/Songs.jsx'
+import Messages from './pages/Messages.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -15,6 +17,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route index element={<Home />} />
           <Route path='rules' element={<Rules />} />
           <Route path='calendar' element={<Calendar />} />
+          <Route path='songs' element={<Songs />} />
+          <Route path='messages' element={<Messages />} />
           <Route path='*' element={<NotFound />} />
         </Route>
       </Routes>

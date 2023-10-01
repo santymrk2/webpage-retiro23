@@ -3,16 +3,14 @@ import imgCrossHair from '../assets/crosshair_white.svg'
 
 const Songs = () => {
   const [song, setSong] = useState(false)
-  const [song_2, setSong_2] = useState(false)
-
-
+  //const [song_2, setSong_2] = useState(false)
 
   return(
     <main className="grid grid-row justify-items-center lg:self-center gap-10 m-5 text-white">
       <div className="hover:scale-100 transition duration-300 ease-in-out bg-black bg-opacity-25 backdrop-blur-xl p-5 m-5 rounded-lg text-xl">
         <div onClick={() => {setSong(!song)}} className='flex flex-row items-center content-center justify-left m-0 transition-opacity	' >
           <img className=" w-12 mr-4" src={imgCrossHair}></img>
-          <h2 className=" text-3xl font-bold">En ti estoy firme</h2>
+          <h2 className="text-3xl font-bold pointer-events-none">En ti estoy firme</h2>
         </div>
         <p className={song ? 'block mt-5' : 'hidden'}>
           VERSE 1:<br />

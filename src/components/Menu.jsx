@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const Menu = ( { makeClick } ) => {
   return(
@@ -6,16 +6,16 @@ const Menu = ( { makeClick } ) => {
       <div className='bg-white absolute rounded-lg p-5 top-32 right-14 z-40'>
         <ul className="flex flex-col gap-6 list-none font-medium no-underline">
           <li >
-            <Link className="block hover:bg-slate-300 rounded-lg p-2" onClick={makeClick} to="/rules">Reglas</Link>
+            <NavLink className="block hover:bg-slate-300 rounded-lg p-2" onClick={makeClick} to="/rules">Reglas</NavLink>
           </li>
           <li>
-            <Link className="block hover:bg-slate-300 rounded-lg p-2" onClick={makeClick} to="/calendar">Calendario</Link>
+            <NavLink className="block hover:bg-slate-300 rounded-lg p-2" onClick={makeClick} to="/calendar">Calendario</NavLink>
           </li>
           <li>
-            <Link className="block hover:bg-slate-300 rounded-lg p-2" onClick={makeClick} to="/songs">Canciones</Link>
+            <NavLink className="block hover:bg-slate-300 rounded-lg p-2" onClick={makeClick} to="/songs">Canciones</NavLink>
           </li>
           <li>
-            <Link className="block hover:bg-slate-300 rounded-lg p-2" onClick={makeClick} to="/messages">Devocionales</Link>
+            <NavLink className="block hover:bg-slate-300 rounded-lg p-2" onClick={makeClick} to="/messages">Devocionales</NavLink>
           </li>
         </ul>
       </div>

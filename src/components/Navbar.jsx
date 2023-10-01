@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import Menu from '../components/Menu.jsx'
 import logoMenu from '../assets/menu.svg'
 import logoExit from '../assets/cross.svg'
@@ -14,21 +14,21 @@ const Navbar = () => {
 
   return(
     <nav className="flex flex-row self-center w-11/12 h-16 m-10 justify-around items-center text-xl font-bold rounded-lg top-5 bg-gray-50">
-      <Link to='/'>
+      <NavLink to='/'>
         <h1 className="text-2xl text m-3">RETIRO23</h1>
-      </Link>
+      </NavLink>
       <ul className="flex flex-row gap-6 list-none font-medium no-underline">
         <li >
-          <Link className="lg:block md:hover:bg-slate-300 md:rounded-lg md:p-2 hidden" to="/rules">Reglas</Link>
+          <NavLink className="lg:block md:hover:bg-slate-300 md:rounded-lg md:p-2 hidden" to="/rules">Reglas</NavLink>
         </li>
         <li>
-          <Link className="lg:block md:hover:bg-slate-300 md:rounded-lg md:p-2 hidden" to="/calendar">Calendario</Link>
+          <NavLink className="lg:block md:hover:bg-slate-300 md:rounded-lg md:p-2 hidden" to="/calendar">Calendario</NavLink>
         </li>
         <li>
-          <Link className="lg:block md:hover:bg-slate-300 md:rounded-lg md:p-2 hidden" to="/songs">Canciones</Link>
+          <NavLink className="lg:block md:hover:bg-slate-300 md:rounded-lg md:p-2 hidden" to="/songs">Canciones</NavLink>
         </li>
         <li>
-          <Link className="lg:block md:hover:bg-slate-300 md:rounded-lg md:p-2 hidden" to="/messages">Devocionales</Link>
+          <NavLink className="lg:block md:hover:bg-slate-300 md:rounded-lg md:p-2 hidden" to="/messages">Devocionales</NavLink>
         </li>
       </ul>
       <div className="block lg:hidden m-2">

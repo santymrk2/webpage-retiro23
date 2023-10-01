@@ -2,38 +2,13 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import imgMaps from '../assets/maps.svg'
 import imgDrive from '../assets/drive.svg'
+import { getDaysForEvent } from '../services/days'
 
-const CURRENT_DATE_BETWEEN = `https://worldtimeapi.org/api/timezone/America/Argentina/Buenos_Aires`
 
 function Home() {
   const [days, setDays] = useState(null)
 
-  useEffect(() => {
-    fetch(CURRENT_DATE_BETWEEN)
-      .then(response => response.json())
-      .then( data => {
-        const { datetime } = data
-        const date = datetime.slice(0, 10)
-
-        function getNumberOfDays(start, end) {
-          const date1 = new Date(start);
-          const date2 = new Date(end);
-
-          // One day in milliseconds
-          const oneDay = 1000 * 60 * 60 * 24;
-
-          // Calculating the time difference between two dates
-          const diffInTime = date2.getTime() - date1.getTime();
-
-          // Calculating the no. of days between two dates
-          const diffInDays = Math.round(diffInTime / oneDay);
-
-          return diffInDays;
-        }
-
-        setDays(getNumberOfDays(date, "2023/10/14"));
-      })
-  }, [])
+  useEffect(() => {getDaysForEvent().then(setDays)}, [])
 
   return(
     <main className='flex flex-col flex-auto justify-center gap-5  text-white'>
@@ -74,11 +49,15 @@ function Home() {
       </div>
       <div className='grid justify-items-center gap-5 relative m-10 p-5 bg-black bg-opacity-25 backdrop-blur-xl	rounded-lg'>
         <h1 className='font-black text-3xl md:text-5xl'>Recuerdos: </h1>
-        <p className='text-base md:text-xl my-5'>Entra al link para ver las fotos del retiro</p>
-        <p className='text-base md:text-xl -my-10'>Tambien podes compartir tus fotos en la carpeta SubiTusFotos</p>
-        <Link className='bg-white hover:bg-gray-400 my-5 m-2 p-2 flex flex-row gap-2 text-center text-2xl  rounded-lg ' to="https://drive.google.com/drive/folders/1dTHK0tTr26BM4F9REs_Fj7de9xhR-UJK?usp=drive_link">
+      <p className='text-base text-center md:text-xl '>Mira las fotos que sacamos</p>
+        <Link className='bg-white hover:bg-gray-400 my-3 m-2 p-2 flex flex-row gap-2 text-center text-2xl  rounded-lg ' to="https://drive.google.com/drive/folders/1ZcMP_s-JWxNoqePxgGQLtowTH-uoHEUc?usp=sharing">
           <img className="w-6 m-1" src={imgDrive}></img>
-          <p className='text-black font-bold text-xl m-1'>GoogleDrive</p>
+          <p className='text-black font-bold text-xl m-1'>Nuestras fotos</p>
+        </Link>
+        <p className='text-base text-center md:text-xl my-2'>Entra al link y espera la confirmación para compartir tus fotos</p>
+        <Link className='bg-white hover:bg-gray-400 my-3 m-2 p-2 flex flex-row gap-2 text-center text-2xl  rounded-lg ' to="https://drive.google.com/drive/folders/1pyOewab6VpfxbwdyLwSXdFxKwJ4AHdww?usp=sharing">
+          <img className="w-6 m-1" src={imgDrive}></img>
+          <p className='text-black font-bold text-xl m-1'>Subi tus fotos</p>
         </Link>
       </div>
     </main>

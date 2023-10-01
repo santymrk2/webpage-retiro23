@@ -17,11 +17,19 @@ const Rules = () => {
       <div className="flex flex-col justify-center content-center self-center items-center text-white text-xl gap-5 m-3 sm:m-10 rounded-lg bg-black bg-opacity-25 backdrop-blur-xl  p-10">
           <h1 className="font-bold text-3xl md:text-4xl tracking-widest">No te olvides:</h1>
           <p>Sábanas</p>
-          <p>Cubiertos</p>
-          <p>Desodorante</p>
+          <p>Toalla de mano y toallon</p>
+          <p>Ropa comoda</p>
+          <p>Protector solar</p>
           <p>Repelente</p>
-          <p>Equipo de mate</p>
-          <p>Linterna</p>
+          <p>Gorras</p>
+          <p>Kit de higiene personal (shampoo, crema enjuague, cepillo dental, pasta dental, jabon)</p>
+          <p>Botella</p>
+          <p>Abrigo</p>
+          <p>Biblia</p>
+          <p>Taza para el desayuno</p>
+          <p>DNI</p>
+          <p>Carnet de obra social (si contas con una)</p>
+          <p>Comida para el almuerzo del viernes</p>
           <p>Descarga la plantilla</p>
           <Link className='bg-white hover:bg-gray-400 my-3 m-2 p-2 flex flex-row gap-2 text-center text-2xl  rounded-lg ' to="/">
             <p className='text-black font-bold text-xl m-1'>Checklist</p>

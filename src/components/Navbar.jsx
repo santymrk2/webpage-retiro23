@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import Menu from '../components/Menu.jsx'
+import Menu from './Menu.jsx'
 import logoMenu from '../assets/menu.svg'
 import logoExit from '../assets/cross.svg'
 
@@ -19,10 +19,10 @@ const Navbar = () => {
       </NavLink>
       <ul className="flex flex-row gap-6 list-none font-medium no-underline">
         <li >
-          <NavLink className="lg:block md:hover:bg-slate-300 md:rounded-lg md:p-2 hidden" to="/rules">Reglas</NavLink>
+          <NavLink className="lg:block md:hover:bg-slate-300 md:rounded-lg md:p-2 hidden" to="/rules">Normas</NavLink>
         </li>
         <li>
-          <NavLink className="lg:block md:hover:bg-slate-300 md:rounded-lg md:p-2 hidden" to="/calendar">Calendario</NavLink>
+          <NavLink className="lg:block md:hover:bg-slate-300 md:rounded-lg md:p-2 hidden" to="/calendar">Agenda</NavLink>
         </li>
         <li>
           <NavLink className="lg:block md:hover:bg-slate-300 md:rounded-lg md:p-2 hidden" to="/songs">Canciones</NavLink>

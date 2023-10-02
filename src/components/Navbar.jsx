@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return(
     <nav className="flex flex-row self-center w-11/12 h-16 m-10 justify-around items-center text-xl font-bold rounded-lg top-5 bg-white">
-      <NavLink to='/'>
+      <NavLink onClick={handleClick} to='/'>
         <h1 className="text-2xl text m-3">RETIRO23</h1>
       </NavLink>
       <ul className="flex flex-row gap-6 list-none font-medium no-underline">

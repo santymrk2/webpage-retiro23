@@ -18,7 +18,8 @@ const Messages = () => {
       setDev(newDev)
     }
   }
-  useEffect(() => {getDaysForEvent().then(setDays)}, [])
+  //useEffect(() => {getDaysForEvent().then(setDays)}, [])
+  useEffect(() => {setDays(-3)}, [])
 
   return(
     <main className="grid grid-row justify-items-center lg:self-center gap-2 m-5 text-white">
@@ -65,7 +66,7 @@ const Messages = () => {
               <p className='text-xl'>{"{ Mat 5.21-22; 27-28; 33-34 }"}</p>
               <div className='flex flex-row'>
                 <img className='w-6 m-2 self-start' src={imgCrossHair}></img>
-                <p className='text-base self-center'>1. Estas normas que Jesus establecio, ¿sirven para algo?</p>
+                <p className='text-base self-center'>1. Estas normas que Jesús establecio, ¿sirven para algo?</p>
               </div>
               <div className='flex flex-row'>
                 <img className='w-6 m-2 self-start' src={imgCrossHair}></img>
@@ -73,7 +74,7 @@ const Messages = () => {
               </div>
               <div className='flex flex-row'>
                 <img className='w-6 m-2 self-start' src={imgCrossHair}></img>
-                <p className='text-base self-center'>3. ¿Que herramientas nos da Jesus para combatir esta forma de pensar</p>
+                <p className='text-base self-center'>3. ¿Que herramientas nos da Jesús para combatir esta forma de pensar</p>
               </div>
             </div>
           }

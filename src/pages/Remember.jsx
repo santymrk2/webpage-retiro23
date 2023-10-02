@@ -28,7 +28,6 @@ const Remember = () => {
         <div className='grid sm:grid-cols-3 gap-4'>
           <p className=' bg-black bg-opacity-25 p-2 rounded-lg text-center self-center'>Toalla de mano y toallón</p>
           <p className='bg-black bg-opacity-25 p-2 rounded-lg text-center self-center'>Sábanas</p>
-          <p className='bg-black bg-opacity-25 p-2 rounded-lg text-center self-center'>Biblia</p>
           <p className='bg-black bg-opacity-25 p-2 rounded-lg text-center self-center'>Botella</p>
           <p className='bg-black bg-opacity-25 p-2 rounded-lg text-center self-center'>Gorras</p>
           <p className='bg-black bg-opacity-25 p-2 rounded-lg text-center self-center'>Abrigo</p>
@@ -36,6 +35,7 @@ const Remember = () => {
           <p className='bg-black bg-opacity-25 p-2 rounded-lg text-center self-center'>Taza para el desayuno</p>
           <p className=' bg-black bg-opacity-25 p-2 rounded-lg text-center self-center'>Almuerzo del día de salida (viernes)</p>
           <p className='bg-black bg-opacity-25 p-2 rounded-lg text-center self-center'>DNI y carnet de obra social (si tenes) </p>
+          <p className='bg-black bg-opacity-25 p-2 rounded-lg text-center self-center'>Biblia</p>
         </div>
         <h1 className="font-bold text-2xl md:text-3xl tracking-widest">Kit de higiene personal:</h1>
         <div className='grid sm:grid-cols-3 gap-4 w-full'>

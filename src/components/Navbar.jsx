@@ -19,7 +19,7 @@ const Navbar = () => {
       </NavLink>
       <ul className="flex flex-row gap-6 list-none font-medium no-underline">
         <li >
-          <NavLink className="lg:block md:hover:bg-slate-300 md:rounded-lg md:p-2 hidden" to="/rules">Normas</NavLink>
+          <NavLink className="lg:block md:hover:bg-slate-300 md:rounded-lg md:p-2 hidden" to="/remember">Recordá</NavLink>
         </li>
         <li>
           <NavLink className="lg:block md:hover:bg-slate-300 md:rounded-lg md:p-2 hidden" to="/calendar">Agenda</NavLink>

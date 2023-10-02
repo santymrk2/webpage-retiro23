@@ -21,7 +21,12 @@ export default {
       '8xl': '12rem',
       '9xl': '15rem'
     },
-    extend: {},
+    extend: {
+      colors: {
+        'spoty-green': '#1DB954',
+        'youtube-red': '#FF0000'
+      }
+    },
     fontFamily: {
       'common': ['upheavtt'],
       'display': ['"Pixelify Sans"']

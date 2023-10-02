@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home.jsx'
 import Layout from './pages/Layout.jsx'
 import Rules from './pages/Rules.jsx'
@@ -11,7 +11,7 @@ import Messages from './pages/Messages.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -22,7 +22,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path='*' element={<NotFound />} />
         </Route>
       </Routes>
-    </BrowserRouter>
-  </React.StrictMode>,
+</HashRouter>
+  </React.StrictMode>
 )
 

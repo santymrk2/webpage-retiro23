@@ -18,8 +18,7 @@ const Messages = () => {
       setDev(newDev)
     }
   }
-  //useEffect(() => {getDaysForEvent().then(setDays)}, [])
-  useEffect(() => {setDays(-3)}, [])
+  useEffect(() => {getDaysForEvent().then(setDays)}, [])
 
   return(
     <main className="grid grid-row justify-items-center lg:self-center gap-2 m-5 text-white">

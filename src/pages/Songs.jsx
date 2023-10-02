@@ -8,15 +8,11 @@ const Songs = () => {
   const handleClick = (index) => {
     if (song[index]) {
       const newSong = [...song]
-      console.log(newSong)
       newSong[index] = !newSong[index]
-      console.log(newSong)
       setSong(newSong)
     } else {
     const newSong = Array(9).fill(false)
-      console.log(newSong)
       newSong[index] = !newSong[index]
-      console.log(newSong)
       setSong(newSong)
     }
   }

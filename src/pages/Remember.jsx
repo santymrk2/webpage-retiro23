@@ -50,7 +50,7 @@ const Remember = () => {
         </div>
         <p className='text-center'>Mirá la plantilla:</p>
         <Link className='bg-white hover:bg-gray-400 my-3 m-2 p-2 flex flex-row gap-2 text-center text-2xl  rounded-lg' to="https://docs.google.com/document/d/1qjq9bpGQNuLwjSN2mGU1sjJ7rouD1R-u1AKfXxYxRvQ/edit?usp=sharing" download>
-          <p className='text-black font-bold text-xl m-1'>Checklist</p>
+          <p className='text-black font-bold text-xl m-1 select-none'>Checklist</p>
         </Link>
       </div>
     </main>

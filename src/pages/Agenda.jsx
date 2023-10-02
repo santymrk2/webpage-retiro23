@@ -52,7 +52,7 @@ const Calendar = () => {
         <Link>
           <p>17:00hs - Excursión</p>
         </Link>
-        <p>Bañarse</p>
+        <p>Tiempo para bañarse</p>
         <p>21:00hs - Cena</p>
         <p>22:00hs - Encuentro & Fogón</p>
       </div>

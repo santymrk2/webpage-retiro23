@@ -1,5 +1,8 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
 import Button from '../components/Button.jsx'
+import imgSpotify from '../assets/spotify.svg'
+import imgYTMusic from '../assets/youtube-music.svg'
 import imgCrossHair from '../assets/crosshair_white.svg'
 
 const Songs = () => {
@@ -439,6 +442,19 @@ const Songs = () => {
         Para darnos su salvación<br/>
         </p>
       </Button>
+      <div className="w-full sm:w-10/12 hover:scale-105 transition duration-300 ease-in-out bg-black bg-opacity-25 backdrop-blur-xl p-5 m-5 rounded-lg text-md sm:text-xl">
+        <div className=' flex flex-row mb-4 items-center content-center justify-left m-0'>
+          <h2 className=" text-3xl font-bold">Escuchalas en nuestra playlist</h2>
+        </div>
+        <Link className='bg-white hover:bg-spoty-green my-5 m-2 p-2 flex flex-row gap-2 text-center text-2xl  rounded-lg ' to="https://open.spotify.com/playlist/2Ci6c4GvpAABCQDPsJqzzm?si=21d6e63886a64b1a">
+          <img className="w-6 m-1" src={imgSpotify}></img>
+          <p className='text-black  font-bold text-xl m-1'>Spotify</p>
+        </Link>
+        <Link className='bg-white hover:bg-youtube-red my-5 m-2 p-2 flex flex-row gap-2 text-center text-2xl  rounded-lg ' to="https://music.youtube.com/playlist?list=PLj3Ukd2XminUKbEfNWKGZGRT_mrgm84s7&feature=share">
+          <img className="w-6 m-1" src={imgYTMusic}></img>
+          <p className='text-black  font-bold text-xl m-1'>YT Music</p>
+        </Link>
+      </div>
     </main>
   )
 }

@@ -5,17 +5,15 @@ const Rules = () => {
     <main className='self-center w-full'>
       <div className="flex flex-col justify-center content-center self-center items-center text-white gap-5 m-3 sm:m-10 rounded-lg bg-black bg-opacity-25 backdrop-blur-xl p-10 text-md sm:text-xl">
           <h1 className="font-bold text-3xl md:text-4xl tracking-widest">A tener en cuenta:</h1>
-          <ul className='list-[upper-roman]'>
-            <li className='text-left'>RESPETAR EL HORARIO DE SILENCIO DE 24 A 8 hs, EXIGIDO POR EL LUGAR</li>
-            <li className='text-left'>RESPETAR LOS LUGARES QUE SE NOS INDICARAN PARA EL USO</li>
-            <li className='text-left'>RESPETO POR LA PROPIEDAD Y EL ENTORNO</li>
-            <li className='text-left'>GUARDAR EL ORDEN EN LAS HABITACIONES Y AREAS COMUNES</li>
-            <li className='text-left'>NO SE PODRA SALIR DEL PREDIO</li>
-            <li className='text-left'>RESPETAR LOS CRONOGRAMAS DEL DIA</li>
-            <li className='text-left'>RESPETAR EL DESCANZO EN LA NOCHE</li>
-            <li className='text-left'>CONTAR HASTA 100 ANTE MOMENTOS DE ENOJOS</li>
-            <li className='text-left'>NO ESTA PERMIDITO EL CONSUMO DE BEBIDAS ALCOHOLICAS</li>
-          </ul>
+          <p className='text-center'>I. RESPETAR EL HORARIO DE SILENCIO DE 24 A 8 hs, EXIGIDO POR EL LUGAR</p>
+          <p className='text-center'>II. RESPETAR LOS LUGARES QUE SE NOS INDICARAN PARA EL USO</p>
+          <p className='text-center'>III. RESPETO POR LA PROPIEDAD Y EL ENTORNO</p>
+          <p className='text-center'>IV. GUARDAR EL ORDEN EN LAS HABITACIONES Y AREAS COMUNES</p>
+          <p className='text-center'>V. NO SE PODRA SALIR DEL PREDIO</p>
+          <p className='text-center'>VI. RESPETAR LOS CRONOGRAMAS DEL DIA</p>
+          <p className='text-center'>VII. RESPETAR EL DESCANZO EN LA NOCHE</p>
+          <p className='text-center'>VIII. CONTAR HASTA 100 ANTE MOMENTOS DE ENOJOS</p>
+          <p className='text-center'>IX. NO ESTA PERMIDITO EL CONSUMO DE BEBIDAS ALCOHOLICAS</p>
       </div>
       <div className="flex flex-col justify-center content-center self-center items-center text-white text-xl gap-5 m-3 sm:m-10 rounded-lg bg-black bg-opacity-25 backdrop-blur-xl  p-10">
           <h1 className="font-bold text-3xl md:text-4xl tracking-widest">No te olvides:</h1>

@@ -24,7 +24,7 @@ const Remember = () => {
 
       <div className="flex flex-col justify-center content-center self-center items-center text-white text-xl gap-5 m-3 sm:m-10 rounded-lg bg-black bg-opacity-25 backdrop-blur-xl p-10">
         <h1 className="font-bold text-3xl md:text-4xl tracking-widest">No te olvides:</h1>
-        <div className='grid sm:grid-cols-3 gap-4'>
+        <div className='grid sm:grid-cols-3 gap-4 w-full'>
           <p className=' bg-black bg-opacity-25 p-2 rounded-lg text-center self-center'>Toalla de mano y toallón</p>
           <p className='bg-black bg-opacity-25 p-2 rounded-lg text-center self-center'>Sábanas</p>
           <p className='bg-black bg-opacity-25 p-2 rounded-lg text-center self-center'>Botella</p>

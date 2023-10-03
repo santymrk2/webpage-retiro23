@@ -35,6 +35,7 @@ const Remember = () => {
           <p className=' bg-black bg-opacity-25 p-2 rounded-lg text-center self-center'>Almuerzo del día de salida (viernes)</p>
           <p className='bg-black bg-opacity-25 p-2 rounded-lg text-center self-center'>DNI y carnet de obra social (si tenes) </p>
           <p className='bg-black bg-opacity-25 p-2 rounded-lg text-center self-center'>Biblia</p>
+          <p className='bg-black bg-opacity-25 p-2 rounded-lg text-center self-center'>Manta para sentarte</p>
         </div>
         <h1 className="font-bold text-2xl md:text-3xl tracking-widest">Kit de higiene personal:</h1>
         <div className='grid sm:grid-cols-3 gap-4 w-full'>

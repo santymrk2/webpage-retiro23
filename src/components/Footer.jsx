@@ -5,7 +5,7 @@ import logoPontifexBlack from '../assets/Logo_Originals_Black.svg'
 
 const Footer = () => {
   return(
-    <footer className="flex mt-auto flex-row justify-evenly md:justify-around items-center self-center h-16 w-11/12 md:w-8/12 gap-8 text-black rounded-lg bg-white">
+    <footer className="flex mt-auto flex-row justify-evenly md:justify-around items-center self-center h-16 w-11/12 md:w-8/12 gap-8 text-black rounded-lg bg-white select-none">
       <img className="h-6 m-2 fill-black" src={logoPontifexBlack}></img>
       <div className="flex flex-row items-center self-center">
         <p className="text-lg hidden md:block md:m-3 md:text-xl">Nuestras redes:</p>

@@ -32,8 +32,8 @@ const Navbar = () => {
         </li>
       </ul>
       <Menu >
-        <Menu.Button >
-            <img className='relative h-10 lg:hidden m-1 hover:bg-slate-200 rounded-lg' src={logoMenu}></img>
+        <Menu.Button className={'lg:hidden m-1'}>
+            <img className='relative h-10 hover:bg-slate-200 rounded-lg' src={logoMenu}></img>
         </Menu.Button>
         <Transition
               className='bg-white absolute rounded-lg p-5 z-40 top-32 right-9 sm:right-11 md:right-12 flex flex-col list-none font-medium'

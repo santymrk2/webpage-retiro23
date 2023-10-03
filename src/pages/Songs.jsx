@@ -24,84 +24,46 @@ const Songs = () => {
     <main className="grid grid-row justify-items-center lg:self-center gap-2 m-5 text-white">
       <Button
         updateBoard={handleClick}
-        title="En ti estoy firme"
-        index={0}
+        title="Construiré mi vida"
+        index={7}
         imgURL={imgCrossHair}
       >
-        <p className={song[0] ? 'block mt-5' : 'hidden'}>
-        VERSE 1:<br />
-        Si la tiniebla viene a atropellar y el gozo me quiere robar<br />
-        Si el dolor se quiere apoderar firme permanezco, firme permanezco (porque)<br />
-        <br />
-        CHORUS:<br />
-        Tu amor vence el temor, cuando en Ti estoy firme<br />
-        Tu amor vence el temor, cuando en Ti estoy firme<br />
-        Tu amor vence el temor, cuando en Ti estoy firme<br />
-        <br />
-        VERSE 2:<br />
-        La verguenza no tiene lugar y las mentiras no me atraparan<br />
-        Sin miedo mi pasado dejo atras firme permanezco, firme permanezco (porque)<br />
-        <br />
-        CHORUS:<br />
-        Tu amor vence el temor, cuando en Ti estoy firme<br />
-        Tu amor vence el temor, cuando en Ti estoy firme<br />
-        Tu amor vence el temor, cuando en Ti estoy firme<br />
-        <br />
-        BRIDGE:<br />
-        Es Tu poder que nos da libertad Y puede aun los muertos levantar<br />
-        Es tu poder que borra la maldad hay poder en tu nombre, hay poder en tu nombre<br />
-        <br />
-        CHORUS:<br />
-        Tu amor vence el temor, cuando en Ti estoy firme<br />
-        Tu amor vence el temor, cuando en Ti estoy firme<br />
-        Tu amor vence el temor, cuando en Ti estoy firme<br />
-        </p>
-      </Button>
-      <Button
-        updateBoard={handleClick}
-        title="Tumbas a jardines"
-        index={1}
-        imgURL={imgCrossHair}
-      >
-        <p className={song[1] ? 'block mt-5' : 'hidden'}>
+        <p className={song[7] ? 'block mt-5' : 'hidden'}>
         VERSE 1:<br/>
-        El mundo busqué y no pudo llenarme<br/>
-        Ningún tesoro que pueda ganar me saciará<br/>
+        Digno de recibir toda adoración<br/>
+        Digno de recibir hoy está canción<br/>
+        Digno de entregarte mi corazón<br/>
+        Vivo por Ti<br/>
         <br/>
         VERSE 2:<br/>
-        Mas llegaste tú me diste vida nueva<br/>
-        Y cada deseo se cumplirá aquí en tu amor<br/>
+        Cristo Jesús no hay otro nombre igual<br/>
+        Cristo, no hay nadie más que pueda salvar<br/>
+        Digno de entregarte mi corazón<br/>
+        Vivo por Ti, vivo por Ti<br/>
         <br/>
         CHORUS:<br/>
-        Oh no hay nada, nada mejor, no hay nada, nada mejor<br/>
-        No hay nada, nada mejor que mi Dios<br/>
+        Santo, como Tú no hay nadie Dios incomparable<br/>
+        Abre Tú mis ojos, Cristo<br/>
+        Quiero conocerte más y ser lleno de Ti, Dios<br/>
+        Y llevar tu amor al mundo<br/>
         <br/>
-        VERSE 3:<br/>
-        Vengo a ti sin miedo y sin reservas<br/>
-        Cada fracaso has visto Señor y aún tu amigo soy<br/>
+        VERSE 1:<br/>
         <br/>
-        VERSE 4:<br/>
-        Porque el Dios de los montes es el Dios de los valles<br/>
-        No hay lugar que me pueda alejar de tu gracia y amor<br/>
+        VERSE 2:<br/>
         <br/>
         CHORUS:<br/>
-        Oh no hay nada, nada mejor, no hay nada, nada mejor<br/>
-        No hay nada, nada mejor que mi Dios<br/>
+        <br/>
+        BRIDGE:<br/>
+        Construiré mi vida en Tu amor, ahí estoy seguro<br/>
+        Mi confianza está en Ti, Señor y no seré movido<br/>
         (2 veces)<br/>
         <br/>
-        BRIDGE 1:<br/>
-        Cambias lamento en danza de cenizas traes vida<br/>
-        Cambias culpa por gloria sé que solo tú lo harás<br/>
-        (2 veces)<br/>
-        <br/>
-        BRIDGE 2:<br/>
-        De las ruinas y tumbas   nacen nuevos jardines<br/>
-        Resucitas los huesos sé que solo tú lo harás<br/>
-        Sé que solo tú lo harás<br/>
-        <br/>
         CHORUS:<br/>
-        Oh no hay nada, nada mejor, no hay nada, nada mejor<br/>
-        No hay nada, nada mejor que mi Dios<br/>
+        Santo, como Tú no hay nadie Dios incomparable<br/>
+        Abre Tú mis ojos, Cristo<br/>
+        Quiero conocerte más y ser lleno de Ti, Dios<br/>
+        Y llevar tu amor al mundo<br/>
+        (2 veces)<br/>
         </p>
       </Button>
       <Button
@@ -153,6 +115,84 @@ const Songs = () => {
       </Button>
       <Button
         updateBoard={handleClick}
+        title="En esto conocemos el amor"
+        index={4}
+        imgURL={imgCrossHair}
+      >
+        <p className={song[4] ? 'block mt-5' : 'hidden'}>
+        VERSE 1:<br/>
+        Grande amor, no existe nada bajo el sol<br/>
+        Que se compare a ti, Señor ¿Quién te puede comprender?<br/>
+        <br/>
+        PRE-CHORUS:<br/>
+        Amor que bajo desde el cie   lo mi alma Él vino a salvar<br/>
+        <br/>
+        CHORUS:<br/>
+        En esto conocemos el amor que Él dio su vida   por nosotros, por nosotros<br/>
+        Sublime gracia que nos alcanzó Él dio su vida   por nosotros, por nosotros<br/>
+        <br/>
+        VERSE 2:<br/>
+        Fiel amor, no deja ir mi corazón<br/>
+        Y mis pecados ya olvidó ¿Quién me puede separar?<br/>
+        <br/>
+        VERSE 3:<br/>
+        Fuerte amor, como montes a mi alrededor<br/>
+        Rodeándome, seguro estoy ¿Qué me puede conmover?<br/>
+        <br/>
+        PRE-CHORUS:<br/>
+        Mi nombre cargo hasta el made ro y me amo hasta el final<br/>
+        <br/>
+        CHORUS:<br/>
+        En esto conocemos el amor que Él dio su vida por nosotros, por nosotros<br/>
+        Sublime gracia que nos alcanzó Él dio su vida por nosotros, por nosotros<br/>
+        <br/>
+        BRIDGE:<br/>
+        De tal manera amó Dios al mundo que envió a su Hijo a morir en una cruz<br/>
+        Y a todo aquel que crea en su nombre la vida eterna le dará, no morirá<br/>
+        <br/>
+        CHORUS:<br/>
+        En esto conocemos el amor que Él dio su vida por nosotros, por nosotros<br/>
+        Sublime gracia que nos alcanzó Él dio su vida por nosotros, por nosotros<br/>
+        (2 veces)<br/>
+        </p>
+      </Button>
+      <Button
+        updateBoard={handleClick}
+        title="En ti estoy firme"
+        index={0}
+        imgURL={imgCrossHair}
+      >
+        <p className={song[0] ? 'block mt-5' : 'hidden'}>
+        VERSE 1:<br />
+        Si la tiniebla viene a atropellar y el gozo me quiere robar<br />
+        Si el dolor se quiere apoderar firme permanezco, firme permanezco (porque)<br />
+        <br />
+        CHORUS:<br />
+        Tu amor vence el temor, cuando en Ti estoy firme<br />
+        Tu amor vence el temor, cuando en Ti estoy firme<br />
+        Tu amor vence el temor, cuando en Ti estoy firme<br />
+        <br />
+        VERSE 2:<br />
+        La verguenza no tiene lugar y las mentiras no me atraparan<br />
+        Sin miedo mi pasado dejo atras firme permanezco, firme permanezco (porque)<br />
+        <br />
+        CHORUS:<br />
+        Tu amor vence el temor, cuando en Ti estoy firme<br />
+        Tu amor vence el temor, cuando en Ti estoy firme<br />
+        Tu amor vence el temor, cuando en Ti estoy firme<br />
+        <br />
+        BRIDGE:<br />
+        Es Tu poder que nos da libertad Y puede aun los muertos levantar<br />
+        Es tu poder que borra la maldad hay poder en tu nombre, hay poder en tu nombre<br />
+        <br />
+        CHORUS:<br />
+        Tu amor vence el temor, cuando en Ti estoy firme<br />
+        Tu amor vence el temor, cuando en Ti estoy firme<br />
+        Tu amor vence el temor, cuando en Ti estoy firme<br />
+        </p>
+      </Button>
+      <Button
+        updateBoard={handleClick}
         title="Glorioso día"
         index={3}
         imgURL={imgCrossHair}
@@ -197,95 +237,6 @@ const Songs = () => {
         Glorioso día, tu sangre me rescató<br/>
         Tu voz me habló y a la muerte venció<br/>
         Glorioso día, tu sangre me rescató<br/>
-        </p>
-      </Button>
-      <Button
-        updateBoard={handleClick}
-        title="En esto conocemos el amor"
-        index={4}
-        imgURL={imgCrossHair}
-      >
-        <p className={song[4] ? 'block mt-5' : 'hidden'}>
-        VERSE 1:<br/>
-        Grande amor, no existe nada bajo el sol<br/>
-        Que se compare a ti, Señor ¿Quién te puede comprender?<br/>
-        <br/>
-        PRE-CHORUS:<br/>
-        Amor que bajo desde el cie   lo mi alma Él vino a salvar<br/>
-        <br/>
-        CHORUS:<br/>
-        En esto conocemos el amor que Él dio su vida   por nosotros, por nosotros<br/>
-        Sublime gracia que nos alcanzó Él dio su vida   por nosotros, por nosotros<br/>
-        <br/>
-        VERSE 2:<br/>
-        Fiel amor, no deja ir mi corazón<br/>
-        Y mis pecados ya olvidó ¿Quién me puede separar?<br/>
-        <br/>
-        VERSE 3:<br/>
-        Fuerte amor, como montes a mi alrededor<br/>
-        Rodeándome, seguro estoy ¿Qué me puede conmover?<br/>
-        <br/>
-        PRE-CHORUS:<br/>
-        Mi nombre cargo hasta el made ro y me amo hasta el final<br/>
-        <br/>
-        CHORUS:<br/>
-        En esto conocemos el amor que Él dio su vida por nosotros, por nosotros<br/>
-        Sublime gracia que nos alcanzó Él dio su vida por nosotros, por nosotros<br/>
-        <br/>
-        BRIDGE:<br/>
-        De tal manera amó Dios al mundo que envió a su Hijo a morir en una cruz<br/>
-        Y a todo aquel que crea en su nombre la vida eterna le dará, no morirá<br/>
-        <br/>
-        CHORUS:<br/>
-        En esto conocemos el amor que Él dio su vida por nosotros, por nosotros<br/>
-        Sublime gracia que nos alcanzó Él dio su vida por nosotros, por nosotros<br/>
-        (2 veces)<br/>
-        </p>
-      </Button>
-      <Button
-        updateBoard={handleClick}
-        title="Sobre todo"
-        index={5}
-        imgURL={imgCrossHair}
-      >
-        <p className={song[5] ? 'block mt-5' : 'hidden'}>
-        VERSE 1:<br/>
-        Sobre todo poder y rey<br/>
-        Sobre toda humanidad y ley<br/>
-        Sobre todo lo creado por tu mano<br/>
-        Tu inventaste todo mi Señor.<br/>
-        <br/>
-        VERSE 2:<br/>
-        Sobre todo reino y nación<br/>
-        Maravillas que el mundo conoció<br/>
-        Sobre toda riqueza y esplendor<br/>
-        Nada se compara a ti mi Dios<br/>
-        <br/>
-        CHORUS:<br/>
-        En la cruz, moriste por amor<br/>
-        No bastó dolor y humillación<br/>
-        Como flor, que alguien pisoteó<br/>
-        Llegaste tú y fue por mi<br/>
-        Por amor.<br/>
-        <br/>
-        VERSE 1:<br/>
-        Sobre todo poder y rey<br/>
-        Sobre toda humanidad y ley<br/>
-        Sobre todo lo creado por tu mano<br/>
-        Tu inventaste todo mi Señor.<br/>
-        <br/>
-        VERSE 2:<br/>
-        Sobre todo reino y nación<br/>
-        Maravillas que el mundo conoció<br/>
-        Sobre toda riqueza y esplendor<br/>
-        Nada se compara a ti mi Dios<br/>
-        <br/>
-        CHORUS:<br/>
-        En la cruz, moriste por amor<br/>
-        No bastó dolor y humillación<br/>
-        Como flor, que alguien pisoteó<br/>
-        Quedaste tú y fue por mi<br/>
-        Por amor.<br/>
         </p>
       </Button>
       <Button
@@ -343,46 +294,95 @@ const Songs = () => {
       </Button>
       <Button
         updateBoard={handleClick}
-        title="Construiré mi vida"
-        index={7}
+        title="Sobre todo"
+        index={5}
         imgURL={imgCrossHair}
       >
-        <p className={song[7] ? 'block mt-5' : 'hidden'}>
+        <p className={song[5] ? 'block mt-5' : 'hidden'}>
         VERSE 1:<br/>
-        Digno de recibir toda adoración<br/>
-        Digno de recibir hoy está canción<br/>
-        Digno de entregarte mi corazón<br/>
-        Vivo por Ti<br/>
+        Sobre todo poder y rey<br/>
+        Sobre toda humanidad y ley<br/>
+        Sobre todo lo creado por tu mano<br/>
+        Tu inventaste todo mi Señor.<br/>
         <br/>
         VERSE 2:<br/>
-        Cristo Jesús no hay otro nombre igual<br/>
-        Cristo, no hay nadie más que pueda salvar<br/>
-        Digno de entregarte mi corazón<br/>
-        Vivo por Ti, vivo por Ti<br/>
+        Sobre todo reino y nación<br/>
+        Maravillas que el mundo conoció<br/>
+        Sobre toda riqueza y esplendor<br/>
+        Nada se compara a ti mi Dios<br/>
         <br/>
         CHORUS:<br/>
-        Santo, como Tú no hay nadie Dios incomparable<br/>
-        Abre Tú mis ojos, Cristo<br/>
-        Quiero conocerte más y ser lleno de Ti, Dios<br/>
-        Y llevar tu amor al mundo<br/>
+        En la cruz, moriste por amor<br/>
+        No bastó dolor y humillación<br/>
+        Como flor, que alguien pisoteó<br/>
+        Llegaste tú y fue por mi<br/>
+        Por amor.<br/>
         <br/>
         VERSE 1:<br/>
+        Sobre todo poder y rey<br/>
+        Sobre toda humanidad y ley<br/>
+        Sobre todo lo creado por tu mano<br/>
+        Tu inventaste todo mi Señor.<br/>
         <br/>
         VERSE 2:<br/>
+        Sobre todo reino y nación<br/>
+        Maravillas que el mundo conoció<br/>
+        Sobre toda riqueza y esplendor<br/>
+        Nada se compara a ti mi Dios<br/>
         <br/>
         CHORUS:<br/>
+        En la cruz, moriste por amor<br/>
+        No bastó dolor y humillación<br/>
+        Como flor, que alguien pisoteó<br/>
+        Quedaste tú y fue por mi<br/>
+        Por amor.<br/>
+        </p>
+      </Button>
+      <Button
+        updateBoard={handleClick}
+        title="Tumbas a jardines"
+        index={1}
+        imgURL={imgCrossHair}
+      >
+        <p className={song[1] ? 'block mt-5' : 'hidden'}>
+        VERSE 1:<br/>
+        El mundo busqué y no pudo llenarme<br/>
+        Ningún tesoro que pueda ganar me saciará<br/>
         <br/>
-        BRIDGE:<br/>
-        Construiré mi vida en Tu amor, ahí estoy seguro<br/>
-        Mi confianza está en Ti, Señor y no seré movido<br/>
-        (2 veces)<br/>
+        VERSE 2:<br/>
+        Mas llegaste tú me diste vida nueva<br/>
+        Y cada deseo se cumplirá aquí en tu amor<br/>
         <br/>
         CHORUS:<br/>
-        Santo, como Tú no hay nadie Dios incomparable<br/>
-        Abre Tú mis ojos, Cristo<br/>
-        Quiero conocerte más y ser lleno de Ti, Dios<br/>
-        Y llevar tu amor al mundo<br/>
+        Oh no hay nada, nada mejor, no hay nada, nada mejor<br/>
+        No hay nada, nada mejor que mi Dios<br/>
+        <br/>
+        VERSE 3:<br/>
+        Vengo a ti sin miedo y sin reservas<br/>
+        Cada fracaso has visto Señor y aún tu amigo soy<br/>
+        <br/>
+        VERSE 4:<br/>
+        Porque el Dios de los montes es el Dios de los valles<br/>
+        No hay lugar que me pueda alejar de tu gracia y amor<br/>
+        <br/>
+        CHORUS:<br/>
+        Oh no hay nada, nada mejor, no hay nada, nada mejor<br/>
+        No hay nada, nada mejor que mi Dios<br/>
         (2 veces)<br/>
+        <br/>
+        BRIDGE 1:<br/>
+        Cambias lamento en danza de cenizas traes vida<br/>
+        Cambias culpa por gloria sé que solo tú lo harás<br/>
+        (2 veces)<br/>
+        <br/>
+        BRIDGE 2:<br/>
+        De las ruinas y tumbas   nacen nuevos jardines<br/>
+        Resucitas los huesos sé que solo tú lo harás<br/>
+        Sé que solo tú lo harás<br/>
+        <br/>
+        CHORUS:<br/>
+        Oh no hay nada, nada mejor, no hay nada, nada mejor<br/>
+        No hay nada, nada mejor que mi Dios<br/>
         </p>
       </Button>
       <Button
@@ -446,11 +446,11 @@ const Songs = () => {
         <div className=' flex flex-row mb-4 items-center content-center justify-left m-0'>
           <h2 className=" text-3xl font-bold">Escuchalas en nuestra playlist</h2>
         </div>
-        <Link className='bg-white hover:bg-spoty-green my-5 m-2 p-2 flex flex-row gap-2 text-center text-2xl  rounded-lg ' to="https://open.spotify.com/playlist/2Ci6c4GvpAABCQDPsJqzzm?si=21d6e63886a64b1a">
+        <Link className='bg-white hover:bg-spoty-green my-5 m-2 p-2 flex flex-row gap-2 text-center text-2xl select-none transition ease-in-out delay-50 rounded-lg ' to="https://open.spotify.com/playlist/2Ci6c4GvpAABCQDPsJqzzm?si=21d6e63886a64b1a">
           <img className="w-6 m-1" src={imgSpotify}></img>
           <p className='text-black  font-bold text-xl m-1'>Spotify</p>
         </Link>
-        <Link className='bg-white hover:bg-youtube-red my-5 m-2 p-2 flex flex-row gap-2 text-center text-2xl  rounded-lg ' to="https://music.youtube.com/playlist?list=PLj3Ukd2XminUKbEfNWKGZGRT_mrgm84s7&feature=share">
+        <Link className='bg-white hover:bg-youtube-red my-5 m-2 p-2 flex flex-row gap-2 text-center text-2xl select-none transition ease-in-out delay-50 rounded-lg ' to="https://music.youtube.com/playlist?list=PLj3Ukd2XminUKbEfNWKGZGRT_mrgm84s7&feature=share">
           <img className="w-6 m-1" src={imgYTMusic}></img>
           <p className='text-black  font-bold text-xl m-1'>YT Music</p>
         </Link>

@@ -42,7 +42,7 @@ function Home() {
         <h1 className='font-black text-3xl md:text-5xl'>Ubicación: </h1>
         <p className='text-base md:text-xl my-5'>Av. Don Bosco 2627, B7000</p>
         <p className='text-base md:text-xl -my-10'>Tandil, Provincia de Buenos Aires</p>
-        <Link className='bg-white hover:bg-gray-400 my-5 m-2 p-2 flex flex-row gap-2 text-center text-2xl  rounded-lg ' to="https://maps.app.goo.gl/dto2kL9TvgbcudtR7">
+        <Link className='bg-white hover:bg-slate-300 my-5 m-2 p-2 flex flex-row gap-2 text-center text-2xl select-none transition ease-in-out delay-50 rounded-lg' to="https://maps.app.goo.gl/dto2kL9TvgbcudtR7">
           <img className="w-6 m-1" src={imgMaps}></img>
           <p className='text-black  font-bold text-xl m-1'>GoogleMaps</p>
         </Link>
@@ -50,12 +50,12 @@ function Home() {
       <div className='grid justify-items-center gap-5 relative m-10 p-5 bg-black bg-opacity-25 backdrop-blur-xl	rounded-lg'>
         <h1 className='font-black text-3xl md:text-5xl'>Recuerdos: </h1>
       <p className='text-base text-center md:text-xl '>Mira las fotos que sacamos</p>
-        <Link className='bg-white hover:bg-gray-400 my-3 m-2 p-2 flex flex-row gap-2 text-center text-2xl  rounded-lg ' to="https://drive.google.com/drive/folders/1ZcMP_s-JWxNoqePxgGQLtowTH-uoHEUc?usp=sharing">
+        <Link className='bg-white hover:bg-slate-300 my-3 m-2 p-2 flex flex-row gap-2 text-center text-2xl select-none transition ease-in-out delay-50 rounded-lg' to="https://drive.google.com/drive/folders/1ZcMP_s-JWxNoqePxgGQLtowTH-uoHEUc?usp=sharing">
           <img className="w-6 m-1" src={imgDrive}></img>
           <p className='text-black font-bold text-xl m-1'>Nuestras fotos</p>
         </Link>
         <p className='text-base text-center md:text-xl my-2'>Entra al link y espera la confirmación para compartir tus fotos</p>
-        <Link className='bg-white hover:bg-gray-400 my-3 m-2 p-2 flex flex-row gap-2 text-center text-2xl  rounded-lg ' to="https://drive.google.com/drive/folders/1pyOewab6VpfxbwdyLwSXdFxKwJ4AHdww?usp=sharing">
+        <Link className='bg-white hover:bg-slate-300 my-3 m-2 p-2 flex flex-row gap-2 text-center text-2xl select-none transition ease-in-out delay-50 rounded-lg' to="https://drive.google.com/drive/folders/1pyOewab6VpfxbwdyLwSXdFxKwJ4AHdww?usp=sharing">
           <img className="w-6 m-1" src={imgDrive}></img>
           <p className='text-black font-bold text-xl m-1'>Subi tus fotos</p>
         </Link>

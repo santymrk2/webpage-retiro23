@@ -12,15 +12,14 @@ const Remember = () => {
         <p className='text-center'>- Los elementos rotos por el mal uso, deberán ser repuestos por el grupo responsable.</p>
         <p className='text-center'>- En el caso de realizar fuego sólo hacerlo en los lugares permitidos (parrillas y fogones).</p>
         <p className='text-center'>- No está permitido traer elementos de percusión al complejo (bombos, redoblantes, etc.).</p>
-        <p className='text-center'>- RESPETAR EL HORARIO DE SILENCIO DE 24 A 8 hs, EXIGIDO POR EL LUGAR Y RESPETAR EL DESCANZO EN LA NOCHE</p>
+        <p className='text-center'>- RESPETAR EL HORARIO DE SILENCIO DE 24 A 8 hs, EXIGIDO POR EL LUGAR Y RESPETAR EL DESCANSO EN LA NOCHE</p>
         <p className='text-center'>- RESPETAR LOS LUGARES QUE SE NOS INDICARAN PARA EL USO</p>
         <p className='text-center'>- RESPETO POR LA PROPIEDAD Y EL ENTORNO</p>
         <p className='text-center'>- GUARDAR EL ORDEN EN LAS HABITACIONES Y AREAS COMUNES</p>
         <p className='text-center'>- NO SE PODRA SALIR DEL PREDIO</p>
-        <p className='text-center'>- RESPETAR LOS CRONOGRAMAS DEL DIA</p>
-        <p className='text-center'>- RESPETAR EL DESCANZO EN LA NOCHE</p>
+        <p className='text-center'>- RESPETAR LOS CRONOGRAMAS DEL día</p>
         <p className='text-center'>- CONTAR HASTA 100 ANTE MOMENTOS DE ENOJOS</p>
-        <p className='text-center'>- NO ESTA PERMIDITO EL CONSUMO DE BEBIDAS ALCOHOLICAS</p>
+        <p className='text-center'>- No está permitido el consumo de bebidas alcoholicas</p>
       </div>
 
       <div className="flex flex-col justify-center content-center self-center items-center text-white text-xl gap-5 m-3 sm:m-10 rounded-lg bg-black bg-opacity-25 backdrop-blur-xl p-10">
@@ -49,7 +48,7 @@ const Remember = () => {
           <p className='bg-black bg-opacity-25 p-2 rounded-lg text-center'>Otros</p>
         </div>
         <p className='text-center'>Mirá la plantilla:</p>
-        <Link className='bg-white hover:bg-gray-400 my-3 m-2 p-2 flex flex-row gap-2 text-center text-2xl  rounded-lg' to="https://docs.google.com/document/d/1qjq9bpGQNuLwjSN2mGU1sjJ7rouD1R-u1AKfXxYxRvQ/edit?usp=sharing" download>
+        <Link className='bg-white hover:bg-slate-200 my-3 m-2 p-2 flex flex-row gap-2 text-center text-2xl  rounded-lg' to="https://docs.google.com/document/d/1qjq9bpGQNuLwjSN2mGU1sjJ7rouD1R-u1AKfXxYxRvQ/edit?usp=sharing" download>
           <p className='text-black font-bold text-xl m-1 select-none'>Checklist</p>
         </Link>
       </div>

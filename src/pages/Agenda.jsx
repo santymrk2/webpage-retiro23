@@ -1,6 +1,5 @@
 import imgClock from '../assets/clock_white.svg'
 import { Link } from 'react-router-dom'
-//import Trip from '../components/Trip.jsx'
 
 const Calendar = () => {
   return(

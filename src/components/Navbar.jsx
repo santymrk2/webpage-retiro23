@@ -11,54 +11,62 @@ const links = [
 ]
 
 const Navbar = () => {
-
   return(
-    <nav className="flex flex-row self-center w-11/12 h-16 m-10 justify-around items-center text-xl font-bold rounded-lg top-5 bg-white">
+    <nav className="flex flex-row self-center w-11/12 h-16 m-10 justify-around items-center text-xl font-bold rounded-lg top-5 bg-white z-40 transition ease-in-out delay-50">
       <NavLink to='/'>
-        <h1 className="text-2xl text m-3">RETIRO23</h1>
+        <h1 className="text-2xl text m-3 transition ease-in-out delay-50">RETIRO23</h1>
       </NavLink>
-      <ul className="flex flex-row gap-6 list-none font-medium no-underline">
+      <ul className="flex flex-row gap-6 list-none align-center self-center font-medium no-underline">
         <li >
-          <NavLink className="lg:block md:hover:bg-slate-200 md:rounded-lg md:p-2 hidden select-none transition ease-in-out delay-50" to="/remember">Recordá</NavLink>
+          <NavLink className="lg:block md:hover:bg-slate-200 md:rounded-lg md:p-2 hidden self-center select-none transition ease-in-out delay-50" to="/remember">Recordá</NavLink>
         </li>
         <li>
-          <NavLink className="lg:block md:hover:bg-slate-200 md:rounded-lg md:p-2 hidden select-none transition ease-in-out delay-50" to="/agenda">Agenda</NavLink>
+          <NavLink className="lg:block md:hover:bg-slate-200 md:rounded-lg md:p-2 hidden self-center select-none transition ease-in-out delay-50" to="/agenda">Agenda</NavLink>
         </li>
         <li>
-          <NavLink className="lg:block md:hover:bg-slate-200 md:rounded-lg md:p-2 hidden select-none transition ease-in-out delay-50" to="/songs">Canciones</NavLink>
+          <NavLink className="lg:block md:hover:bg-slate-200 md:rounded-lg md:p-2 hidden self-center select-none transition ease-in-out delay-50" to="/songs">Canciones</NavLink>
         </li>
         <li>
-          <NavLink className="lg:block md:hover:bg-slate-200 md:rounded-lg md:p-2 hidden select-none transition ease-in-out delay-50" to="/messages">Devocionales</NavLink>
+          <NavLink className="lg:block md:hover:bg-slate-200 md:rounded-lg md:p-2 hidden self-center select-none transition ease-in-out delay-50" to="/messages">Devocionales</NavLink>
         </li>
       </ul>
       <Menu >
-        <Menu.Button className={'lg:hidden m-1'}>
-            <img className='relative h-10 hover:bg-slate-200 rounded-lg' src={logoMenu}></img>
-        </Menu.Button>
-        <Transition
-              className='bg-white absolute rounded-lg p-5 z-40 top-32 right-9 sm:right-11 md:right-12 flex flex-col list-none font-medium'
-              enter="transition duration-100 ease-out"
-              enterFrom="transform scale-95 opacity-0"
-              enterTo="transform scale-100 opacity-100"
-              leave="transition duration-75 ease-out"
-              leaveFrom="transform scale-100 opacity-100"
-              leaveTo="transform scale-95 opacity-0"
-            >
-          <Menu.Items>
-          {links.map((link) => (
-                  /* Use the `active` state to conditionally style the active item. */
-                  <Menu.Item className='block hover:bg-slate-200 rounded-lg p-2 m-1 select-none' key={link.href} as={Fragment}>
-                    {() => (
-                      <NavLink
-                        to={link.href}
-                      >
-                        {link.label}
-                      </NavLink>
-                    )}
-                  </Menu.Item>
-                ))}
-          </Menu.Items>
-        </Transition>
+        {({open})=> (
+          <>
+          <Menu.Button className='lg:hidden m-1'>
+              <img className='relative h-10 focus:bg-slate-200 rounded-lg' src={ logoMenu }></img>
+          </Menu.Button>
+          {open ? (
+            <Transition
+                  className='bg-white fixed rounded-lg p-5 z-40 top-32 right-9 sm:right-12 md:right-16 flex flex-row list-none font-medium backdrop-blur-xl'
+                  enter="transition duration-100 ease-out"
+                  enterFrom="transform scale-95 opacity-0"
+                  enterTo="transform scale-100 opacity-100"
+                  leave="transition duration-75 ease-out"
+                  leaveFrom="transform scale-100 opacity-100"
+                  leaveTo="transform scale-95 opacity-0"
+                >
+              <Menu.Items>
+              {links.map((link) => (
+                      /* Use the `active` state to conditionally style the active item. */
+                      <Menu.Item key={link.href} as={Fragment}>
+                        {({active}) => (
+                          <NavLink
+                            className={`${
+                              active ? 'block bg-slate-200 rounded-lg p-2 m-1 select-none' : 'block rounded-lg p-2 m-1 select-none'
+                            }`}
+                            to={link.href}
+                          >
+                            {link.label}
+                          </NavLink>
+                        )}
+                      </Menu.Item>
+                    ))}
+              </Menu.Items>
+            </Transition>
+          ) : ""}
+          </>
+        )}
       </Menu>
     </nav>
   )

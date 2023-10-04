@@ -12,7 +12,7 @@ const Remember = () => {
         <p className='text-center'>- Los elementos rotos por el mal uso, deberán ser repuestos por el grupo responsable.</p>
         <p className='text-center'>- En el caso de realizar fuego sólo hacerlo en los lugares permitidos (parrillas y fogones).</p>
         <p className='text-center'>- No está permitido traer elementos de percusión al complejo (bombos, redoblantes, etc.).</p>
-        <p className='text-center'>- RESPETAR EL HORARIO DE SILENCIO DE 24 A 8 hs, EXIGIDO POR EL LUGAR Y RESPETAR EL DESCANSO EN LA NOCHE</p>
+        <p className='text-center'>- RESPETAR EL HORARIO DE SILENCIO DE 00 A 08 hs, EXIGIDO POR EL LUGAR Y RESPETAR EL DESCANSO EN LA NOCHE</p>
         <p className='text-center'>- RESPETAR LOS LUGARES QUE SE NOS INDICARAN PARA EL USO</p>
         <p className='text-center'>- RESPETO POR LA PROPIEDAD Y EL ENTORNO</p>
         <p className='text-center'>- GUARDAR EL ORDEN EN LAS HABITACIONES Y AREAS COMUNES</p>

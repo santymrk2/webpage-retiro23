@@ -48,7 +48,6 @@ const Navbar = () => {
                 >
               <Menu.Items>
               {links.map((link) => (
-                      /* Use the `active` state to conditionally style the active item. */
                       <Menu.Item key={link.href} as={Fragment}>
                         {({active}) => (
                           <NavLink

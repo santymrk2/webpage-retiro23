@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import imgMaps from '../assets/maps.svg'
 import imgDrive from '../assets/drive.svg'
 import imgSpotify from '../assets/spotify.svg'
-//import imgYTMusic from '../assets/youtube-music.svg'
+import imgYTMusic from '../assets/youtube-music.svg'
 import { getDaysForEvent } from '../services/days'
 
 
@@ -57,10 +57,10 @@ function Home() {
             <img className="w-6 m-2" src={imgSpotify}></img>
             <p className='text-black font-bold text-xl text-center self-center m-1 p-2'>Spotify</p>
           </Link>
-          {/*<Link className='bg-white hover:bg-youtube-red flex flex-row justify-evenly gap-2 text-center text-2xl select-none transition ease-in-out delay-50 rounded-lg ' to="">
+          <Link className='bg-white hover:bg-youtube-red flex flex-row justify-evenly gap-2 text-center text-2xl select-none transition ease-in-out delay-50 rounded-lg ' to="https://music.youtube.com/playlist?list=PLC313ihg4qMI1lr9-Y9SULYYiVIMwhs0w&si=a_kJSATAhh7TTBQt">
             <img className="w-6 m-2" src={imgYTMusic}></img>
             <p className='text-black font-bold text-xl text-center self-center m-1 p-2'>YT Music</p>
-          </Link>*/}
+          </Link>
         </div>
       </div>
 

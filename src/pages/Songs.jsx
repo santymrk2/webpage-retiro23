@@ -46,7 +46,7 @@ const Songs = () => {
   }
 
   return(
-    <main className="grid grid-row justify-center content-center lg:self-center gap-2 m-5 text-white select-none">
+    <main className="grid grid-row justify-center lg:self-center gap-2 m-5 text-white select-none">
       {songs.map((song, index) => (
             <Button
               updateBoard={handleClick}
@@ -60,8 +60,8 @@ const Songs = () => {
       ))}
 
       <div className="w-full sm:w-9/12 md:w-10/12 hover:scale-105 justify-self-center transition duration-300 ease-in-out bg-black bg-opacity-25 backdrop-blur-xl p-5 m-5 rounded-lg select-none">
-          <h2 className="text-2xl text-center sm:text-3xl font-bold mb-5 my-2">Escuchalas en nuestra playlist</h2>
-        <div className='grid sm:grid-cols-2 sm:justify-center gap-5'>
+          <h2 className="text-2xl text-center sm:text-3xl font-bold mb-5 my-2">Escuchalas en <br/> nuestra playlist</h2>
+        <div className='grid sm:grid-cols-2 sm:content-center gap-5'>
           <Link className='bg-white hover:bg-spoty-green grid grid-rows-2 px-1 w-32 gap-2 text-center justify-self-center text-2xl select-none transition ease-in-out delay-50 rounded-lg ' to="https://open.spotify.com/playlist/2Ci6c4GvpAABCQDPsJqzzm?si=21d6e63886a64b1a">
             <img className="w-6 m-2" src={imgSpotify}></img>
             <p className='text-black font-bold text-xl text-center self-center m-1 p-2'>Spotify</p>

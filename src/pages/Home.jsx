@@ -45,22 +45,24 @@ function Home() {
           <h1 className='font-black text-3xl md:text-5xl'>Ubicación: </h1>
           <p className='text-base md:text-xl text-center '>Av. Don Bosco 2627, B7000</p>
           <p className='text-base md:text-xl text-center -mt-5'>Tandil, Provincia de Buenos Aires</p>
-          <Link className='bg-white hover:bg-slate-300 mb-5 m-2 p-2 flex flex-row gap-2 text-center text-2xl select-none transition ease-in-out delay-50 rounded-lg' to="https://maps.app.goo.gl/dto2kL9TvgbcudtR7">
+          <Link className='bg-white hover:bg-slate-300 mb-5 m-2 p-2 flex flex-row gap-2 text-2xl select-none transition ease-in-out delay-50 rounded-lg' to="https://maps.app.goo.gl/dto2kL9TvgbcudtR7">
             <img className="w-6 m-1" src={imgMaps}></img>
-            <p className='text-black  font-bold text-xl m-1'>GoogleMaps</p>
+            <p className='text-black font-bold text-center text-xl m-1'>GoogleMaps</p>
           </Link>
         </div>
 
         <div className="grid justify-items-center gap-5 relative m-10 p-8 bg-black bg-opacity-25 backdrop-blur-xl	rounded-lg">
-          <h1 className=" text-2xl lg:text-3xl font-bold self-center text-center">Acompañá el viaje <br/> con música</h1>
-          {/*px-1*/}<Link className='bg-white hover:bg-spoty-green flex flex-row h-14 justify-evenly gap-2 text-center text-2xl select-none transition ease-in-out delay-50 rounded-lg ' to="https://open.spotify.com/playlist/00WOvKLAITZLkilqk4RVtp?si=b81eNaT8QfyIhNu5hGhdqQ">
-            <img className="w-6 m-2" src={imgSpotify}></img>
-            <p className='text-black font-bold text-xl text-center self-center m-1 p-2'>Spotify</p>
-          </Link>
-          <Link className='bg-white hover:bg-youtube-red flex flex-row justify-evenly gap-2 text-center text-2xl select-none transition ease-in-out delay-50 rounded-lg ' to="https://music.youtube.com/playlist?list=PLC313ihg4qMI1lr9-Y9SULYYiVIMwhs0w&si=a_kJSATAhh7TTBQt">
-            <img className="w-6 m-2" src={imgYTMusic}></img>
-            <p className='text-black font-bold text-xl text-center self-center m-1 p-2'>YT Music</p>
-          </Link>
+          <h1 className=" text-xl sm:text-2xl lg:text-3xl font-bold self-center text-center">Acompañá el viaje <br/> con música</h1>
+          <div className='grid sm:grid-cols-2 gap-5'>
+            <Link className='bg-white hover:bg-spoty-green grid grid-rows-2 px-1 justify-evenly gap-2 text-center text-2xl select-none transition ease-in-out delay-50 rounded-lg ' to="https://open.spotify.com/playlist/00WOvKLAITZLkilqk4RVtp?si=b81eNaT8QfyIhNu5hGhdqQ">
+              <img className="w-6 m-2" src={imgSpotify}></img>
+              <p className='text-black font-bold text-xl text-center self-center m-1 p-2'>Spotify</p>
+            </Link>
+            <Link className='bg-white hover:bg-youtube-red grid grid-rows-2 gap-2 text-center text-2xl select-none transition ease-in-out delay-50 rounded-lg ' to="https://music.youtube.com/playlist?list=PLC313ihg4qMI1lr9-Y9SULYYiVIMwhs0w&si=a_kJSATAhh7TTBQt">
+              <img className="w-6 m-2" src={imgYTMusic}></img>
+              <p className='text-black font-bold text-xl text-center self-center m-1 p-2'>YT Music</p>
+            </Link>
+          </div>
         </div>
       </div>
 

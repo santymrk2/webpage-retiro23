@@ -19,6 +19,6 @@ export const getDaysForEvent = () => {
       return diffInDays;
     }
 
-    return getNumberOfDays(date, "2023/10/14");
+    return getNumberOfDays(date, "2023/10/13");
   })
 }

@@ -12,7 +12,7 @@ const links = [
 
 const Navbar = () => {
   return(
-    <nav className="flex flex-row self-center w-11/12 h-16 m-10 justify-around items-center text-xl font-bold rounded-lg top-5 bg-white z-40 transition ease-in-out delay-50">
+    <nav className="flex flex-row self-center w-11/12 h-16 m-10 justify-around items-center text-xl font-bold rounded-lg top-5 bg-white z-40 transition ease-in-out delay-50 drop-shadow-xl">
       <NavLink to='/'>
         <h1 className="text-2xl text m-3 transition ease-in-out delay-50">RETIRO23</h1>
       </NavLink>
@@ -38,7 +38,7 @@ const Navbar = () => {
           </Menu.Button>
           {open ? (
             <Transition
-                  className='bg-white fixed rounded-lg p-5 z-40 top-32 right-9 sm:right-12 md:right-16 flex flex-row list-none font-medium backdrop-blur-xl'
+                  className='bg-white absolute rounded-lg p-5 z-40 top-20 right-1  flex flex-row list-none font-medium backdrop-blur-xl'
                   enter="transition duration-100 ease-out"
                   enterFrom="transform scale-95 opacity-0"
                   enterTo="transform scale-100 opacity-100"
@@ -48,7 +48,6 @@ const Navbar = () => {
                 >
               <Menu.Items>
               {links.map((link) => (
-                      /* Use the `active` state to conditionally style the active item. */
                       <Menu.Item key={link.href} as={Fragment}>
                         {({active}) => (
                           <NavLink

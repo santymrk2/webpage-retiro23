@@ -31,7 +31,7 @@ const Remember = () => {
           <p className='bg-black bg-opacity-25 p-2 rounded-lg text-center self-center'>Gorras</p>
           <p className='bg-black bg-opacity-25 p-2 rounded-lg text-center self-center'>Abrigo</p>
           <p className='bg-black bg-opacity-25 p-2 rounded-lg text-center self-center'>Ropa cómoda</p>
-          <p className='bg-black bg-opacity-25 p-2 rounded-lg text-center self-center'>Taza para desayuno<br/>(palastico o vaso termico)</p>
+          <p className='bg-black bg-opacity-25 p-2 rounded-lg text-center self-center'>Taza para desayuno<br/>(plástico o vaso térmico)</p>
           <p className=' bg-black bg-opacity-25 p-2 rounded-lg text-center self-center'>Almuerzo del día de salida (viernes)</p>
           <p className='bg-black bg-opacity-25 p-2 rounded-lg text-center self-center'>DNI y carnet de obra social (si tenes) </p>
           <p className='bg-black bg-opacity-25 p-2 rounded-lg text-center self-center'>Biblia</p>

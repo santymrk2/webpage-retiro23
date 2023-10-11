@@ -2,11 +2,17 @@ import { useEffect, useState } from 'react'
 import imgCup from '../assets/cup_white.svg'
 import imgCrossHair from '../assets/crosshair_white.svg'
 import Button from '../components/Button.jsx'
-import { getDaysForEvent } from '../services/days'
+//import { getDaysForEvent } from '../services/days'
+
+const SHEETS_API = 'https://script.google.com/macros/s/AKfycbzp5JTfyxDU4b8W-UR1JlOZK7MrZW1JKYFqsw_ts-cG8ZsVoLv2x4cTLtDuDiAEhLcA/exec'
 
 const Messages = () => {
   const [days, setDays] = useState(null)
   const [dev, setDev] = useState(Array(3).fill(false))
+  const [list, setList] = useState(null)
+  const [group, setGroup] = useState(Array(8))
+  const [groups, setGroups] = useState(null)
+
   const handleClick = (index) => {
     if (dev[index]) {
       const newDev = [...dev]
@@ -18,7 +24,25 @@ const Messages = () => {
       setDev(newDev)
     }
   }
-  useEffect(() => {getDaysForEvent().then(setDays)}, [])
+
+  const getMessageSplitting = () => {
+    return fetch(SHEETS_API)
+      .then(response => response.json())
+      .then( data => {
+        setList(data.data)
+        const groupSet = new Set(data.data.map(({Group})=>Group))
+        const arrayGroup = Array.from(groupSet)
+        setGroup(arrayGroup)
+      })
+
+  }
+
+  //useEffect(() => {getDaysForEvent().then(setDays)}, [])
+  useEffect(() => {
+    getMessageSplitting()
+  }, [])
+
+  useEffect(() => {setDays(-1)}, [])
 
   return(
     <main className="grid grid-row justify-items-center lg:self-center gap-2 m-5 text-white">
@@ -26,32 +50,72 @@ const Messages = () => {
       {days==0 && <h1 className='text-3xl sm:text-4xl font-bold'>¿Estas preparado?</h1>}
       {days<0 && <div className='drop-shadow-lg'><h1 className='self-center text-3xl text-center sm:text-5xl'>Principios revalorizados</h1></div>}
       {days<=-1 &&
-      <Button
-        updateBoard={handleClick}
-        title="Día 1"
-        index={0}
-        state={dev}
-        imgURL={imgCup}
-      >
-        {dev[0] &&
-          <div className='block w-11/12 self-center'>
-            <p className='text-2xl'>{"{ Mat 5.1-12 }"}</p>
-            <div className='flex flex-row'>
-              <img className='w-6 m-2 self-start' src={imgCrossHair}></img>
-              <p className='text-base self-center'>1. ¿Que cualidades son las que Jesús revaloriza?</p>
+      <>
+        <Button
+          updateBoard={handleClick}
+          title="Día 1"
+          index={0}
+          state={dev}
+          imgURL={imgCup}
+        >
+          {dev[0] &&
+            <div className='block w-11/12 self-center'>
+              <p className='text-2xl'>{"{ Mat 5.1-12 }"}</p>
+              <div className='flex flex-row'>
+                <img className='w-6 m-2 self-start' src={imgCrossHair}></img>
+                <p className='text-base self-center'>1. ¿Que cualidades son las que Jesús revaloriza?</p>
+              </div>
+              <div className='flex flex-row'>
+                <img className='w-6 m-2 self-start' src={imgCrossHair}></img>
+                <p className='text-base self-center'>2. Nuestro entorno, ¿como ve esas cualidades?</p>
+              </div>
+              <div className='flex flex-row'>
+                <img className='w-6 m-2 self-start' src={imgCrossHair}></img>
+                <p className='text-base self-center'>3. ¿Como afectan estas cualidades a mi vida?</p>
+              </div>
             </div>
-            <div className='flex flex-row'>
-              <img className='w-6 m-2 self-start' src={imgCrossHair}></img>
-              <p className='text-base self-center'>2. Nuestro entorno, ¿como ve esas cualidades?</p>
-            </div>
-            <div className='flex flex-row'>
-              <img className='w-6 m-2 self-start' src={imgCrossHair}></img>
-              <p className='text-base self-center'>3. ¿Como afectan estas cualidades a mi vida?</p>
-            </div>
-          </div>
-        }
-      </Button>
+          }
+        </Button>
+      </>
       }
+      <div onClick={() => setGroups(!groups)} className='mt-4 bg-black bg-opacity-25 backdrop-blur-xl  my-3 m-2 p-2 flex flex-row gap-2 text-center text-2xl  rounded-lg'>
+        <p className='text-white font-bold text-4xl m-2 px-3 select-none'>Grupos</p>
+      </div>
+
+      {groups && group.map((group, index_group)=>(
+        <div key={index_group} className="flex flex-col w-11/12 justify-center content-center self-center items-center text-white text-xl gap-5 m-3 sm:m-10 rounded-lg bg-black bg-opacity-25 backdrop-blur-xl p-10">
+          <h1 className="font-bold text-3xl md:text-4xl tracking-widest">{`Grupo ${group+1}:`}</h1>
+          <div className='grid sm:grid-cols-3 gap-4 w-full'>
+          {list.map((person, index_person)=>{
+            {if(person.Group==group) {
+              return(
+              <div key={index_person} className={person.Role=='Modera' ? 'bg-white  p-2 rounded-lg text-center self-center text-black' : 'bg-black bg-opacity-25 p-2 rounded-lg text-center self-center'}>
+                <p>{person.Name}</p>
+                <p>{person.Surname}</p>
+              </div>
+              )
+            }}
+          })}
+          </div>
+        </div>
+      ))
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       {days<=-2 &&
         <Button
           updateBoard={handleClick}

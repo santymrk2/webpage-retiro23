@@ -14,7 +14,14 @@ function Home() {
 
   return(
     <main className='flex flex-col flex-auto justify-center gap-5  text-white'>
-      {days>0 &&
+      {days==1 &&
+        <div className='m-10 sm:m-20 p-15 text-center rounded-lg drop-shadow-2xl'>
+          <h2 className='m-0 font-bold text-5xl my-10 z-0'>FALTA</h2>
+          <h2 className='m-0 font-black leading-none text-9xl animate-bounce z-0'>{days}</h2>
+          <h2 className='m-0 font-bold text-6xl z-0'>DÍA</h2>
+        </div>
+      }
+      {days>1 &&
         <div className='m-10 sm:m-20 p-15 text-center rounded-lg drop-shadow-2xl'>
           <h2 className='m-0 font-bold text-5xl my-10 z-0'>FALTAN</h2>
           <h2 className='m-0 font-black leading-none text-9xl animate-bounce z-0'>{days}</h2>

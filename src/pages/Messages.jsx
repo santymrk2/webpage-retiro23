@@ -102,7 +102,7 @@ const Messages = () => {
                 </div>
                 <div className='flex flex-row'>
                   <img className='w-6 m-2 self-start' src={imgCrossHair}></img>
-                  <p className='text-base self-center'>3. ¿Que herramientas nos da Jesús para combatir esta forma de pensar</p>
+                  <p className='text-base self-center'>3. ¿Que herramientas nos da Jesús para combatir esta forma de pensar?</p>
                 </div>
               </div>
             }

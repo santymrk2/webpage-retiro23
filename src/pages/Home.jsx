@@ -1,52 +1,16 @@
-import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import imgMaps from '../assets/maps.svg'
 import imgDrive from '../assets/drive.svg'
 import imgSpotify from '../assets/spotify.svg'
 import imgYTMusic from '../assets/youtube-music.svg'
-import { getDaysForEvent } from '../services/days'
-
 
 function Home() {
-  const [days, setDays] = useState(null)
-
-  useEffect(() => {getDaysForEvent().then(setDays)}, [])
-
   return(
     <main className='flex flex-col flex-auto justify-center gap-5  text-white'>
-      {days==1 &&
-        <div className='m-10 sm:m-20 p-15 text-center rounded-lg drop-shadow-2xl'>
-          <h2 className='m-0 font-bold text-5xl my-10 z-0'>FALTA</h2>
-          <h2 className='m-0 font-black leading-none text-9xl animate-bounce z-0'>{days}</h2>
-          <h2 className='m-0 font-bold text-6xl z-0'>DÍA</h2>
-        </div>
-      }
-      {days>1 &&
-        <div className='m-10 sm:m-20 p-15 text-center rounded-lg drop-shadow-2xl'>
-          <h2 className='m-0 font-bold text-5xl my-10 z-0'>FALTAN</h2>
-          <h2 className='m-0 font-black leading-none text-9xl animate-bounce z-0'>{days}</h2>
-          <h2 className='m-0 font-bold text-6xl z-0'>DÍAS</h2>
-        </div>
-      }
-      {days==0 &&
-        <div className='m-10 sm:m-20 p-15 text-center rounded-lg drop-shadow-2xl'>
-          <h2 className='m-0 font-bold text-3xl md:text-5xl my-10 z-0'>ES</h2>
-          <h2 className='m-0 font-black leading-none text-6xl md:text-7xl lg:text-9xl animate-bounce -my-5 z-0'>HOY</h2>
-          <h2 className='m-0 font-bold text-3xl md:text-5xl my-10 z-0'>es hoy</h2>
-        </div>
-      }
-      {(days < 0 && days >= -3) &&
-      <div className='m-10 sm:m-20 p-15 text-center rounded-lg drop-shadow-2xl'>
-        <h2 className='m-0 font-bold text-5xl my-10 z-0'>ESTAMOS EN </h2>
-        <h2 className='m-0 font-black leading-none text-6xl sm:text-7xl xl:text-9xl animate-bounce mb-20 z-0'>TANDIL</h2>
+      <div className='m-10 sm:m-20 md:36 p-15 text-center rounded-lg drop-shadow-2xl'>
+        <h2 className='m-0 font-bold text-3xl md:text-5xl my-10 z-0'>gracias por</h2>
+        <h2 className='m-0 font-black leading-none text-3xl sm:text-5xl  lg:text-6xl xl:text-7xl animate-bounce z-0'>acompañarnos</h2>
       </div>
-    }
-      {(days < -3) &&
-        <div className='m-10 sm:m-20 md:36 p-15 text-center rounded-lg drop-shadow-2xl'>
-          <h2 className='m-0 font-bold text-3xl md:text-5xl my-10 z-0'>gracias por</h2>
-          <h2 className='m-0 font-black leading-none text-3xl sm:text-5xl  lg:text-6xl xl:text-7xl animate-bounce z-0'>acompañarnos</h2>
-        </div>
-      }
       <div className='grid grid-cols-1 lg:grid-cols-2'>
         <div className='grid justify-items-center gap-5 relative m-10 p-5 bg-black bg-opacity-25 backdrop-blur-xl	rounded-lg'>
           <h1 className='font-black text-3xl md:text-5xl'>Ubicación: </h1>
